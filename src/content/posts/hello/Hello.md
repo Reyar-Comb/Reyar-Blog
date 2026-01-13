@@ -1,68 +1,54 @@
 ---
-title: My First Blog
-published: 2026-01-13
-description: Hello World
-image: './aris.png'
-tags: ["Intro"]
-category: 'Index'
+title: 个人简介
+published: 2026-01-11
+description: 个人技术栈与项目介绍
+image: '../../../assets/images/log.jpg'
+tags: ["简介"]
+category: '关于'
 draft: false 
-lang: 'en'
+lang: 'zh'
 ---
 
-# Hi, I'm Reyar
+# 你好，我是 Reyar
 
-I'm an amateur **DTMer** and **Programmer**.
+我是一名**在校大学生**，热衷于**计算机科学**与**音乐创作**。
 
 ---
-## About Me
-- Currently studying at **HITSZ**
-- Extremely into **Electronic Music** and **Computer Science** and loves **creative** works.
-- **Poor at programming** (Important).
+## 关于我
+- 目前就读于 **哈尔滨工业大学（深圳）**
+- 专注于 **编程技术** 学习与 **创意内容** 开发。
 
-## Tech Stack
-| Category | Tools |
+## 技术栈
+| 类别 | 工具/语言 |
 | :--- | :--- |
-| **Frontend** | Vue, Tailwind CSS |
-| **Backend** | Golang(notyet), Python, C#|
-| **Game Engine** | Godot, Unity|
-| **Others** | Git, Nonebot |  
+| **前端** | Vue, Tailwind CSS |
+| **后端** | Golang (学习中), Python, C#|
+| **游戏引擎** | Godot, Unity|
+| **其他** | Git, Nonebot |  
 
-## Music Production
-- **Experience**: Arranger & Composer of [**[ Astral Sympathy ]**](https://space.bilibili.com/3690992320383242)
-- **DAW**: FL Studio, GarageBand.
-- **Major Genre**: Progressive House, Melodic Dubstep, **Color Bass**(Now learning).
-- **Favorite Artists**: Porter Robinson, TSAR, SamZIng, Snail's House, etc. 
+## 项目展示
 
-### Featured Tracks:
-#### 《Rekindled》For [《Tarnished Stardust》](https://www.dizzylab.net/d/NTP-005/) @ [[ NullTech_PARAMECIUM ]](https://www.dizzylab.net/l/NullTech_PARAMECIUM/)
-<iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1zHsKzfEqH" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
+### 游戏开发
+**技术栈**: C#, Godot, Unity
 
-
-#### 《Azure World》For Cosmic Radio 2025
-<iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1M1KpzkEwt" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>  
-
-## Game Production
-- **Engines**: Godot, Unity.
-- **Main Language**: C#.
-
-### Featured Works:
-#### 《闪送茶餐厅》 For NAGO Gamejam 2025
+#### 《闪送茶餐厅》 (NAGO Gamejam 2025 参赛作品)
 <iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1CpyfBmEZm" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>  
 
-### [**[Click Here To Download]**](https://github.com/Reyar-Comb/NAGO_Gamejam/releases)  
+[**[ 项目与源码下载 ]**](https://github.com/Reyar-Comb/NAGO_Gamejam/releases)  
+*(负责程序开发与背景音乐制作)*
 
-***// I also made background music for this game***
+### 音乐制作
+**DAW**: FL Studio
 
+#### 《Rekindled》收录于《Tarnished Stardust》
+<iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1zHsKzfEqH" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> 
 
-## Fun Facts
-- **Rhythm Games**: **Arcaea** (ptt 13.02), **Phigros** (rks 16.89)
-- **Favorite Characters**: **Eyjafjalla**(from Arknights), **Tendou Aris**(from Blue archive).
-- **Actually** loves silent music apart from EDM (favorites: mamomo | aethoro).
-- **Poor At Studying**.
+#### 《Azure World》
+<iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1M1KpzkEwt" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>  
 
-## Contact Me
-- **Bilibili**  [[ @Reyar_RY ]](https://space.bilibili.com/238730660)
-- **Github**  [[ @Reyar_Comb ]](https://github.com/Reyar-Comb)
+## 联系方式
+- **Bilibili**: [[ @Reyar_RY ]](https://space.bilibili.com/238730660)
+- **Github**: [[ @Reyar_Comb ]](https://github.com/Reyar-Comb)
 
 ---
-# Feel Free to Hit Me Up ❤️🫵
+# 欢迎交流学习 ❤️

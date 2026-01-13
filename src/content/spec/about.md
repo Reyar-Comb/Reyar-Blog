@@ -1,5 +1,5 @@
-# About
-This is Reyar's Personal Blog Page.
+# 关于
+这是Reyar的个人技术学习笔记。
 
-## Powered by Fuwari & Astro
+## 本博客模版基于Fuwari & Astro
 ::github{repo="saicaca/fuwari"}
