@@ -54,10 +54,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site-dist
-          path: .
+          path: dist
 
       - name: Configure SSH key
         run: |
+          ls
           mkdir -p ~/.ssh
           printf '%s' "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
