@@ -8,41 +8,57 @@
     import '@waline/client/style';
     import '../styles/waline.css';
 
-    function loadWaline() {
-        const walineInstance = init({
-            el: '#waline',
-            serverURL: 'https://waline.reyar.top',
-            path: window.location.pathname,
-            lang: 'zh-CN',
-            dark: 'auto',
-            emoji: [
-                '//unpkg.com/@waline/emojis@latest/bilibili'
-            ],
-            meta: ['nick', 'mail'],
-            requiredMeta: ['nick'],
-            pageSize: 10,
-        });
+    const managerKey = '__walineManager';
 
-        return walineInstance;
-    }
+    const createManager = () => {
+        let walineInstance: ReturnType<typeof init> | null = null;
 
-    let walineInstance: ReturnType<typeof init> | null = null;
+        const render = () => {
+            const container = document.querySelector('#waline');
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-            walineInstance = loadWaline();
-        })
-    } else {
-        walineInstance = loadWaline();
-    }
+            if (!container) {
+                if (walineInstance?.destroy) {
+                    walineInstance.destroy();
+                    walineInstance = null;
+                }
+                return;
+            }
 
-    document.addEventListener('astro:page-load', () => {
-        if (walineInstance && walineInstance.destroy) {  
-            walineInstance.destroy();
-        }
+            if (walineInstance?.destroy) {
+                walineInstance.destroy();
+            }
 
-        walineInstance = loadWaline();
-    })
+            walineInstance = init({
+                el: '#waline',
+                serverURL: 'https://waline.reyar.top',
+                path: window.location.pathname,
+                lang: 'zh-CN',
+                dark: 'auto',
+                emoji: [
+                    '//unpkg.com/@waline/emojis@latest/bilibili'
+                ],
+                meta: ['nick', 'mail'],
+                requiredMeta: ['nick'],
+                pageSize: 10,
+            });
+        };
+
+        const onPageLoad = () => {
+            queueMicrotask(render);
+        };
+
+        document.addEventListener('astro:after-swap', onPageLoad);
+        document.addEventListener('astro:page-load', onPageLoad);
+
+        return {
+            render,
+        };
+    };
+
+    const globalWindow = window as unknown as Record<string, ReturnType<typeof createManager>>;
+    const manager = globalWindow[managerKey] ?? (globalWindow[managerKey] = createManager());
+
+    manager.render();
 </script>
 
 <style>
