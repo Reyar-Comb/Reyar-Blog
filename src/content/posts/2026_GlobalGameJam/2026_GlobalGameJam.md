@@ -83,7 +83,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 ## Music Composition
 最开始的想法就是写一个悬疑bgm，但是对于自然小调的和声还是不太会写。最后尝试了`I - bVI - I - bVI`无限循环的和弦进行，尝试利用平行大小调转换来构建一种不和谐感，并设定为三拍子。用简单的电钢琴分解和弦铺底，加入了氛围系的Pad以及高音的简单钢琴旋律。并且尝试了写string并画了Velocity的表情。果然有了力度变化，弦乐的表现力会增色不少。   
 <audio controls>
-    <source src="../../../../public/audio/audio_GGJ.mp3" type="audio/mpeg">
+    <source src="/audio/audio_GGJ.mp3" type="audio/mpeg">
     An Audio Here
 </audio>
 但是奇怪的是做出来后画风竟变得比较温柔了，这才注意到这个进行是只有大三和弦的，虽然旋律尽量往小调靠了，但根据反响总体似乎还是积极的基调（？。不过作为游戏BGM应该也算达成了应有的任务吧，玩的时候还算是挺沉浸的。  
