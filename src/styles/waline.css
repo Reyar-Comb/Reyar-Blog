@@ -1,0 +1,48 @@
+#waline {
+  --waline-theme-color: #ff5b9f;
+  --waline-active-color: var(--primary);
+  --waline-bg-color: var(--card-bg);
+  --waline-bg-color-light: var(--btn-regular-bg);
+  --waline-border-color: var(--line-color);
+  --waline-disable-bg-color: var(--btn-plain-bg-hover);
+  --waline-disable-color: var(--meta-divider);
+  --waline-code-bg-color: var(--codeblock-bg);
+  --waline-bq-color: var(--meta-divider);
+  --waline-info-bg-color: var(--btn-regular-bg);
+  --waline-info-color: var(--btn-content);
+  --waline-info-border-color: var(--line-color);
+}
+
+#waline .wl-panel {
+    margin: 0;
+}
+#waline .wl-card {
+  background-color: #ff5b9f00;
+  border-color: var(--line-color);
+  border-radius: var(--radius-large);
+}
+
+#waline .wl-input,
+#waline .wl-editor,
+#waline .wl-preview {
+  background-color: var(--card-bg);
+}
+
+#waline .wl-action,
+#waline .wl-more,
+#waline .wl-btn {
+  color: var(--btn-content);
+}
+
+#waline .wl-btn {
+  background-color: var(--btn-regular-bg);
+  border-color: var(--line-color);
+}
+
+#waline .wl-btn:hover {
+  background-color: var(--btn-regular-bg-hover);
+}
+
+#waline .wl-btn:active {
+  background-color: var(--btn-regular-bg-active);
+}

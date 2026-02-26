@@ -1,0 +1,52 @@
+---
+// src/components/Waline.astro
+---
+<div id="waline"></div>
+
+<script>
+    import { init } from '@waline/client';
+    import '@waline/client/style';
+    import '../styles/waline.css';
+
+    function loadWaline() {
+        const walineInstance = init({
+            el: '#waline',
+            serverURL: 'https://waline.reyar.top',
+            path: window.location.pathname,
+            lang: 'zh-CN',
+            dark: 'auto',
+            emoji: [
+                '//unpkg.com/@waline/emojis@latest/bilibili'
+            ],
+            meta: ['nick', 'mail'],
+            requiredMeta: ['nick'],
+            pageSize: 10,
+        });
+
+        return walineInstance;
+    }
+
+    let walineInstance: ReturnType<typeof init> | null = null;
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            walineInstance = loadWaline();
+        })
+    } else {
+        walineInstance = loadWaline();
+    }
+
+    document.addEventListener('astro:page-load', () => {
+        if (walineInstance && walineInstance.destroy) {  
+            walineInstance.destroy();
+        }
+
+        walineInstance = loadWaline();
+    })
+</script>
+
+<style>
+    #waline {
+        margin-top: 2rem;
+    }
+</style>
